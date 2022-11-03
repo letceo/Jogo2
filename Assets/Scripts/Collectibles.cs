@@ -12,21 +12,21 @@ public class Collectibles : MonoBehaviour
     {
         if (isColliding && Input.GetMouseButtonUp(0)) 
         {
-            if(gameObject.name == "fish")
+            if(gameObject.name == "fish" && gameInfo.requestFish == true)
             {
                 gameInfo.caughtFish = true;
                 Debug.Log(gameInfo.caughtFish);
                 Destroy(gameObject);
             }
 
-            if(gameObject.name == "book2")
+            if(gameObject.name == "book2" && gameInfo.requestBook == true)
             {
                 gameInfo.getBook = true;
                 Debug.Log(gameInfo.getBook);
                 Destroy(gameObject);
             }
 
-            if(gameObject.name == "football")
+            if(gameObject.name == "football" && gameInfo.requestBook == true)
             {
                 gameInfo.fetchBall = true;
                 Debug.Log(gameInfo.fetchBall);

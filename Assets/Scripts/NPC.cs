@@ -29,7 +29,7 @@ public class NPC : MonoBehaviour
                 }
             }
 
-            if(gameObject.name == "AmeeBeeSF")
+            if(gameObject.name == "AmeBeeSF")
             {
                 if(gameInfo.fetchBall==true) 
                 {
