@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34d33578258b79459500b65b0b6477d, type: 3}
   m_Name: GameInfo
   m_EditorClassIdentifier: 
-  requestFish: 1
-  requestBook: 1
+  requestFish: 0
+  requestBook: 0
   requestBall: 0
-  caughtFish: 1
-  getBook: 1
-  fetchBall: 1
-  deliverFish: 1
-  deliverBook: 1
-  deliverBall: 1
+  caughtFish: 0
+  getBook: 0
+  fetchBall: 0
+  deliverFish: 0
+  deliverBook: 0
+  deliverBall: 0
   money: 0
