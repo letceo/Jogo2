@@ -1471,10 +1471,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e61279137e0a6444a6c69d7fd48503d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameInfo: {fileID: 11400000, guid: 470a9d04296ae3647a030e4b750dff71, type: 2}
   fadeDuration: 1
   displayImageDuration: 1
   player: {fileID: 768837819}
   exitBackgroundImageCanvasGroup: {fileID: 541227566}
+  boat: {fileID: 0}
 --- !u!65 &189263380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2067,10 +2069,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e61279137e0a6444a6c69d7fd48503d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameInfo: {fileID: 11400000, guid: 470a9d04296ae3647a030e4b750dff71, type: 2}
   fadeDuration: 1
   displayImageDuration: 1
   player: {fileID: 768837819}
   exitBackgroundImageCanvasGroup: {fileID: 599920074}
+  boat: {fileID: 0}
 --- !u!65 &299108557
 BoxCollider:
   m_ObjectHideFlags: 0

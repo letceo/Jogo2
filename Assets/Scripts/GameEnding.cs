@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class GameEnding : MonoBehaviour
 {
+    public GameInfo gameInfo;
     public float fadeDuration = 1f;
     public float displayImageDuration = 1f;
     public GameObject player;
     public CanvasGroup exitBackgroundImageCanvasGroup;
+    public GameObject boat;
 
     bool m_IsPlayerAtExit;
     float m_Timer;
 
-    void OnTriggerEnter (Collider other)
+    void OnTriggerEnter (Collider boat)
     {
-        if (other.gameObject == player)
+        if (boat.gameObject == player)
         {
             m_IsPlayerAtExit = true;
         }
@@ -22,9 +24,13 @@ public class GameEnding : MonoBehaviour
 
     void Update ()
     {
-        if(m_IsPlayerAtExit)
+        if(m_IsPlayerAtExit && gameInfo.deliverFish==true && gameInfo.deliverBall==true && gameInfo.deliverBook==true)
         {
             EndLevel ();
+        }
+        else
+        {
+            Debug.Log("Não completou tasks");
         }
     }
 

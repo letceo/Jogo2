@@ -3,7 +3,10 @@ guid: 1e61279137e0a6444a6c69d7fd48503d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - gameInfo: {fileID: 11400000, guid: 470a9d04296ae3647a030e4b750dff71, type: 2}
+  - player: {instanceID: 0}
+  - exitBackgroundImageCanvasGroup: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
