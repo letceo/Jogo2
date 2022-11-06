@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutorialJohnLemon.unity
     guid: b5873136dd193c144a8b99250eb3ecf1
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 62e408ef1d14b5f4c966ec7dbf13d4fe
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d6dbd246ad2186a4eb9d87fe13403c19,
       type: 2}
