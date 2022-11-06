@@ -3653,6 +3653,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameInfo: {fileID: 11400000, guid: 470a9d04296ae3647a030e4b750dff71, type: 2}
+  DialogoInicio: {fileID: 0}
+  DialogoFim: {fileID: 0}
 --- !u!1 &815135905 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6733543015037677313, guid: 8fddd3dee47b8464fa35633e55d9a9f2,
@@ -3874,6 +3876,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameInfo: {fileID: 11400000, guid: 470a9d04296ae3647a030e4b750dff71, type: 2}
+  DialogoInicio: {fileID: 0}
+  DialogoFim: {fileID: 0}
 --- !u!1 &917318321
 GameObject:
   m_ObjectHideFlags: 0
@@ -6855,6 +6859,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameInfo: {fileID: 11400000, guid: 470a9d04296ae3647a030e4b750dff71, type: 2}
+  DialogoInicio: {fileID: 0}
+  DialogoFim: {fileID: 0}
 --- !u!1 &2058246055 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4365944498362361059, guid: 8fddd3dee47b8464fa35633e55d9a9f2,

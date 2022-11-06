@@ -6,8 +6,8 @@ public class NPC : MonoBehaviour
 {
     public GameInfo gameInfo;
     private bool isColliding=false;
-    //public gameObject DialogoInicio;
-    //public gameObject DialogoFim;
+    public GameObject DialogoInicio;
+    public GameObject DialogoFim;
 
     void Update()
     {
@@ -20,12 +20,14 @@ public class NPC : MonoBehaviour
                     gameInfo.deliverFish=true;
                     gameInfo.money=gameInfo.money+1;
                     Debug.Log(gameInfo.deliverFish);
+                    DialogoFim.SetActive(true);
                 }
 
                 else 
                 {
                     gameInfo.requestFish = true;
                     Debug.Log(gameInfo.requestFish);
+                    DialogoInicio.SetActive(true);
                 }
             }
 
@@ -36,12 +38,14 @@ public class NPC : MonoBehaviour
                     gameInfo.deliverBall=true;
                     gameInfo.money=gameInfo.money+1;
                     Debug.Log(gameInfo.deliverBall);
+                    DialogoFim.SetActive(true);
                 }
 
                 else 
                 {
                     gameInfo.requestBall = true;
                     Debug.Log(gameInfo.requestBall);
+                    DialogoInicio.SetActive(true);
                 }
             }
 
@@ -52,11 +56,13 @@ public class NPC : MonoBehaviour
                     gameInfo.deliverBook=true;
                     gameInfo.money=gameInfo.money+1;
                     Debug.Log(gameInfo.deliverBook);
+                    DialogoFim.SetActive(true);
                 }
 
                 else {
                     gameInfo.requestBook = true;
                     Debug.Log(gameInfo.requestBook);
+                    DialogoInicio.SetActive(true);
                 }
             }  
         }
