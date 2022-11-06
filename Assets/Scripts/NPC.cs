@@ -11,7 +11,7 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-        if (isColliding && Input.GetMouseButtonUp(0)) 
+        if (isColliding && Input.GetKeyDown(KeyCode.F) ) 
         {
             if(gameObject.name == "foxmage")
             {

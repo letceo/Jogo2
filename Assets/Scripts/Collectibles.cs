@@ -10,7 +10,7 @@ public class Collectibles : MonoBehaviour
 //se estiver perto do collectible e interagir faz coisa
     void Update()
     {
-        if (isColliding && Input.GetMouseButtonUp(0)) 
+        if (isColliding && Input.GetKeyDown(KeyCode.F)) 
         {
             if(gameObject.name == "fish" && gameInfo.requestFish == true)
             {
