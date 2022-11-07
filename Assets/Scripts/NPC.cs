@@ -19,9 +19,9 @@ public class NPC : MonoBehaviour
                 if(gameInfo.caughtFish==true) 
                 {
                     gameInfo.deliverFish=true;
-                    gameInfo.money=gameInfo.money+1;
                     Debug.Log(gameInfo.deliverFish);
                     DialogoFim.SetActive(true);
+                    ScoreTextScript.coinAmount+=1;
                     AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
                 }
 
@@ -38,9 +38,9 @@ public class NPC : MonoBehaviour
                 if(gameInfo.fetchBall==true) 
                 {
                     gameInfo.deliverBall=true;
-                    gameInfo.money=gameInfo.money+1;
                     Debug.Log(gameInfo.deliverBall);
                     DialogoFim.SetActive(true);
+                    ScoreTextScript.coinAmount+=1;
                     AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
                 }
 
@@ -57,9 +57,9 @@ public class NPC : MonoBehaviour
                 if(gameInfo.getBook==true) 
                 {
                     gameInfo.deliverBook=true;
-                    gameInfo.money=gameInfo.money+1;
                     Debug.Log(gameInfo.deliverBook);
                     DialogoFim.SetActive(true);
+                    ScoreTextScript.coinAmount+=1;
                     AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
                 }
 

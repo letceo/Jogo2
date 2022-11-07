@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameEnding : MonoBehaviour
 {
     public GameInfo gameInfo;
-    public float fadeDuration = 1f;
-    public float displayImageDuration = 1f;
     public GameObject player;
-    public CanvasGroup exitBackgroundImageCanvasGroup;
     public GameObject boat;
 
     bool m_IsPlayerAtExit;
-    float m_Timer;
 
     void OnTriggerEnter (Collider boat)
     {
@@ -24,23 +21,26 @@ public class GameEnding : MonoBehaviour
 
     void Update ()
     {
-        if(m_IsPlayerAtExit && gameInfo.deliverFish==true && gameInfo.deliverBall==true && gameInfo.deliverBook==true)
+        if(gameInfo.deliverFish==true && gameInfo.deliverBall==true && gameInfo.deliverBook==true)
         {
+            gameInfo.missionAccomplished=true;
+        }
+
+        if(m_IsPlayerAtExit && gameInfo.missionAccomplished==true)
+        {
+            Debug.Log("Pronto a partir");
             EndLevel ();
         }
-        else
+
+        if(m_IsPlayerAtExit && gameInfo.missionAccomplished==false)
         {
-            Debug.Log("Não completou tasks");
+            Debug.Log("Nao completou tasks");
         }
     }
 
     void EndLevel ()
     {
-        m_Timer += Time.deltaTime;
-        exitBackgroundImageCanvasGroup.alpha = m_Timer / fadeDuration;
-        if(m_Timer > fadeDuration)
-        {
-            Application.Quit();
-        }
+        SceneManager.LoadScene (5);
     }
 }
+

@@ -21,6 +21,5 @@ public class GameInfo : ScriptableObject
         public bool deliverBook = false;
         public bool deliverBall = false;
         
-    //----------MONEY -----------//
-        public int money=0; 
+        public bool missionAccomplished=false;
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowMap : MonoBehaviour
 {
-    public CanvasGroup exitBackgroundImageCanvasGroup;
+
     // Start is called before the first frame update
 
 

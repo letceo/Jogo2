@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requestFish: 1
   requestBook: 0
-  requestBall: 0
+  requestBall: 1
   caughtFish: 1
-  getBook: 0
-  fetchBall: 0
+  getBook: 1
+  fetchBall: 1
   deliverFish: 1
-  deliverBook: 0
-  deliverBall: 0
-  money: 1
+  deliverBook: 1
+  deliverBall: 1
+  missionAccomplished: 1
