@@ -8,6 +8,7 @@ public class NPC : MonoBehaviour
     private bool isColliding=false;
     public GameObject DialogoInicio;
     public GameObject DialogoFim;
+    public AudioClip taskSound;
 
     void Update()
     {
@@ -21,6 +22,7 @@ public class NPC : MonoBehaviour
                     gameInfo.money=gameInfo.money+1;
                     Debug.Log(gameInfo.deliverFish);
                     DialogoFim.SetActive(true);
+                    AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
                 }
 
                 else 
@@ -39,6 +41,7 @@ public class NPC : MonoBehaviour
                     gameInfo.money=gameInfo.money+1;
                     Debug.Log(gameInfo.deliverBall);
                     DialogoFim.SetActive(true);
+                    AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
                 }
 
                 else 
@@ -57,6 +60,7 @@ public class NPC : MonoBehaviour
                     gameInfo.money=gameInfo.money+1;
                     Debug.Log(gameInfo.deliverBook);
                     DialogoFim.SetActive(true);
+                    AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
                 }
 
                 else {

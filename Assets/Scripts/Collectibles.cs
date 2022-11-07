@@ -6,6 +6,8 @@ public class Collectibles : MonoBehaviour
 {
     public GameInfo gameInfo;
     private bool isColliding=false;
+    public AudioClip pickupSound;
+
 
 //se estiver perto do collectible e interagir faz coisa
     void Update()
@@ -14,6 +16,8 @@ public class Collectibles : MonoBehaviour
         {
             if(gameObject.name == "fish" && gameInfo.requestFish == true)
             {
+                AudioSource.PlayClipAtPoint(pickupSound, transform.position, 1);
+                //PickUpObject.animation.Play ("animationName"); 
                 gameInfo.caughtFish = true;
                 Debug.Log(gameInfo.caughtFish);
                 Destroy(gameObject);
@@ -21,6 +25,8 @@ public class Collectibles : MonoBehaviour
 
             if(gameObject.name == "book2" && gameInfo.requestBook == true)
             {
+                AudioSource.PlayClipAtPoint(pickupSound, transform.position, 1);
+                //PickUpObject.animation.Play ("animationName"); 
                 gameInfo.getBook = true;
                 Debug.Log(gameInfo.getBook);
                 Destroy(gameObject);
@@ -28,6 +34,8 @@ public class Collectibles : MonoBehaviour
 
             if(gameObject.name == "football" && gameInfo.requestBook == true)
             {
+                AudioSource.PlayClipAtPoint(pickupSound, transform.position, 1);
+                //PickUpObject.animation.Play ("animationName");
                 gameInfo.fetchBall = true;
                 Debug.Log(gameInfo.fetchBall);
                 Destroy(gameObject);
