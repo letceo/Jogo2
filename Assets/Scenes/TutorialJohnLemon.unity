@@ -2074,7 +2074,7 @@ MonoBehaviour:
   displayImageDuration: 1
   player: {fileID: 768837819}
   exitBackgroundImageCanvasGroup: {fileID: 599920074}
-  boat: {fileID: 0}
+  boat: {fileID: 299108555}
 --- !u!65 &299108557
 BoxCollider:
   m_ObjectHideFlags: 0
