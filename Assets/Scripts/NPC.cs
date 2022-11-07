@@ -103,6 +103,13 @@ public class NPC : MonoBehaviour
                     DialogoInicio.SetActive(true);
                     
                 }
+
+            if(gameObject.name == "rabbit")
+                {
+                    //SAudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
+                    DialogoInicio.SetActive(true);
+                    
+                }
         }
     }
 
