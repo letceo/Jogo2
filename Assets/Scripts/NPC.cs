@@ -73,7 +73,7 @@ public class NPC : MonoBehaviour
             if(gameObject.name == "TicketLady")
                 {
                     DialogoInicio.SetActive(true);
-                    AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
+                    //AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
                 }
 
             if(gameObject.name == "cat")
@@ -90,6 +90,19 @@ public class NPC : MonoBehaviour
                     
                 }
             
+            if(gameObject.name == "monsterkid")
+                {
+                    //SAudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
+                    DialogoInicio.SetActive(true);
+                    
+                }
+            
+            if(gameObject.name == "bear")
+                {
+                    //SAudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
+                    DialogoInicio.SetActive(true);
+                    
+                }
         }
     }
 

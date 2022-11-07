@@ -7,6 +7,8 @@ public class Collectibles : MonoBehaviour
     public GameInfo gameInfo;
     private bool isColliding=false;
     public AudioClip pickupSound;
+    public GameObject DialogoInicio;
+    public GameObject DialogoMeio;
 
 
 //se estiver perto do collectible e interagir faz coisa
@@ -14,8 +16,15 @@ public class Collectibles : MonoBehaviour
     {
         if (isColliding && Input.GetKeyDown(KeyCode.F)) 
         {
+
+            if(gameObject.name == "fish" && gameInfo.requestFish == false)
+            {
+                DialogoMeio.SetActive(true);
+            }
+
             if(gameObject.name == "fish" && gameInfo.requestFish == true)
             {
+                DialogoInicio.SetActive(true);
                 AudioSource.PlayClipAtPoint(pickupSound, transform.position, 1);
                 //PickUpObject.animation.Play ("animationName"); 
                 gameInfo.caughtFish = true;
