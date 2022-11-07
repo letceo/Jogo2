@@ -69,6 +69,13 @@ public class NPC : MonoBehaviour
                     DialogoInicio.SetActive(true);
                 }
             }  
+
+            if(gameObject.name == "TicketLady")
+                {
+                    DialogoInicio.SetActive(true);
+                    AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
+                }
+            
         }
     }
 
