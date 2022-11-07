@@ -75,6 +75,20 @@ public class NPC : MonoBehaviour
                     DialogoInicio.SetActive(true);
                     AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
                 }
+
+            if(gameObject.name == "cat")
+                {
+                    AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
+                    DialogoInicio.SetActive(true);
+                    
+                }
+            
+            if(gameObject.name == "anda")
+                {
+                    AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
+                    DialogoInicio.SetActive(true);
+                    
+                }
             
         }
     }
