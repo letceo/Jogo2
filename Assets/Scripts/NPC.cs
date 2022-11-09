@@ -37,10 +37,10 @@ public class NPC : MonoBehaviour
             {
                 if(gameInfo.fetchBall==true) 
                 {
-                    gameInfo.deliverBall=true;
-                    Debug.Log(gameInfo.deliverBall);
                     DialogoFim.SetActive(true);
+                    Debug.Log(gameInfo.deliverBall);
                     ScoreTextScript.coinAmount+=1;
+                    gameInfo.deliverBall=true;
                     AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
                 }
 
