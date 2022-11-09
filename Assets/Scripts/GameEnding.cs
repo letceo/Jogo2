@@ -19,10 +19,8 @@ public class GameEnding : MonoBehaviour
         if(gameInfo.deliverFish==true && gameInfo.deliverBall==true && gameInfo.deliverBook==true)
         {
             AudioSource.PlayClipAtPoint(taskSound, transform.position, 1);
-            DialogoEndGame.SetActive(true);
             gameInfo.missionAccomplished=true;
-            
-            
+            DialogoEndGame.SetActive(true);
 
         }
 
