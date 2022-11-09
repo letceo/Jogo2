@@ -8918,7 +8918,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.16298763
+  m_Radius: 0.46
   m_Height: 0.978923
   m_Direction: 1
   m_Center: {x: -0.055050455, y: 0.50882095, z: 0.8289234}
@@ -9384,7 +9384,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.23696709
+  m_Radius: 0.6
   m_Height: 0.9864243
   m_Direction: 1
   m_Center: {x: -0.032060944, y: 0.5107936, z: 1.3541961}
@@ -10367,7 +10367,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5915357
+  m_Radius: 1.35
   m_Height: 1.9211
   m_Direction: 1
   m_Center: {x: -0.0026957477, y: 0.9005499, z: -0.045340277}
@@ -10583,7 +10583,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 95e3a11a28ae03348b6a93f6bf23dda2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.069
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11877,6 +11877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91371f9d2c9651b46ad5406033575fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splashSound: {fileID: 8300000, guid: d9274c1b6b8eb9a4aa2a8a7461a8f183, type: 3}
 --- !u!114 &1044486933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13677,13 +13678,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 95e3a11a28ae03348b6a93f6bf23dda2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.069
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 86
+  Priority: 97
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 602.97
@@ -14867,7 +14868,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.22397979
+  m_Radius: 0.58
   m_Height: 1.2460012
   m_Direction: 1
   m_Center: {x: -0.1546998, y: 0.63661194, z: 0.27960715}
@@ -19420,7 +19421,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 2.090855
+  m_Radius: 4.83
   m_Height: 7.659401
   m_Direction: 1
   m_Center: {x: 0.19185646, y: 3.6293273, z: 0.18089294}
@@ -21442,10 +21443,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.71206635
-  m_Height: 2.521187
+  m_Radius: 1.6347388
+  m_Height: 3.6781626
   m_Direction: 1
-  m_Center: {x: -0.015204952, y: -0.00007122755, z: 0.28726295}
+  m_Center: {x: -0.015205023, y: -0.00007122755, z: 1.0125973}
 --- !u!114 &1986274997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23245,7 +23246,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.0336943
+  m_Radius: 7.02
   m_Height: 6.090877
   m_Direction: 1
   m_Center: {x: 0.06887572, y: 0.37584102, z: 0.0000000014708994}

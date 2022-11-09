@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requestFish: 0
   requestBook: 0
-  requestBall: 0
+  requestBall: 1
   caughtFish: 0
   getBook: 0
   fetchBall: 0
